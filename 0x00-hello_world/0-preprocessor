@@ -1,4 +1,2 @@
 #!/bin/bash
-/* the c file will me ran using the gcc */
-/* and the the the complied file will be in saved in a named c */
 gcc -E $CFILE -o c 
