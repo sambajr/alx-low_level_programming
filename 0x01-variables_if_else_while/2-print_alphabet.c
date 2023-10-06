@@ -10,11 +10,11 @@
 int main(void)
 {
 	char letter;
-	for (letter = 'a'; letter <= 'z'; letter++)
 
+	for (letter = 'a'; letter <= 'z'; letter++)
 	/* Use putchar to print each letter */
 		putchar(letter);
-	/* Use putchar to print a newline character after all letters have been printed */
+	/* Use putchar to print a newline character */
 
 	putchar('\n');
 
