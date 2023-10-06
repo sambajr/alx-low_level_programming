@@ -1,6 +1,10 @@
-#include <stdio.h>
 /* Include the standard input/output library*/
-/* Print the size of char*/
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 1 (Success)
+ */
 int main(void)
 {/*main function call*/
 	fprintf(stderr, "Size of a char: %zu byte(s)\n", sizeof(char));
