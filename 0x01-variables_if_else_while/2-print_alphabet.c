@@ -1,11 +1,22 @@
-/*including stdio lib8*/
 #include <stdio.h>
-/* main function call */
+/**
+ * main - Entry point
+ *
+ * This program prints the alphabet in lowercase using the putchar function.
+ * The putchar function is used only twice in this code.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char letter;
-	for (letter = 'a';letter <= 'z';letter++)
+	for (letter = 'a'; letter <= 'z'; letter++)
+
+	/* Use putchar to print each letter */
 		putchar(letter);
+	/* Use putchar to print a newline character after all letters have been printed */
+
 	putchar('\n');
+
 	return (0);
 }
