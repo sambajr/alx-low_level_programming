@@ -21,7 +21,7 @@ int main(void)
 	{
 		putchar(base);
 	}
-	for (base = 'a'; base <= 'h'; base++)
+	for (base = 'a'; base <= 'f'; base++)
 	{
 		putchar(base);
 	}
