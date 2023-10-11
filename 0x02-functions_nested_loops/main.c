@@ -5,7 +5,7 @@ void _putchar(char c)
     write(1, &c, 1); /* Write a single character */
 }
 
-void print_alpha(void)
+void print_alphabet(void)
 {
     char letter = 'a';
 

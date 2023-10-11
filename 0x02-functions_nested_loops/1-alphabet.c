@@ -1,5 +1,5 @@
-#include "print_alpha.h"
-#include "putchar.h"
+
+#include "main.h"
 #include <stdio.h>
 /**
  * main - Entry point of the program
@@ -13,7 +13,7 @@
  */
 int main(void)
 {
-	print_alpha();
+	print_alphabet();
 	return (0);
 }
 
