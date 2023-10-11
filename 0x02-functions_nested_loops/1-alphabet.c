@@ -1,19 +1,16 @@
-
 #include "main.h"
-
 /**
- * main - Entry point of the program
- *
- * Description:
- * This is the main function of the program. It includes necessar
- * and calls the 'print_alpha' function to print the lowercas
- * by a new line. It returns 0 to indicate successful execution.
- *
- * Return: Always 0 (Success)
+ * print_alphabet  - make the alpha.
+ * Return:void
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
-}
+	char letter = 'a';
 
+	while (letter <= 'z')
+	{
+		_putchar(letter);
+		letter++;
+	}
+	_putchar('\n');
+}

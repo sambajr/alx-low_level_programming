@@ -1,7 +1,13 @@
 #include "main.h"
 /**
- * main - Entry point
- * RETURN: ALWAYS 0
+ * main - Entry point of the program
+ *
+ * Description:
+ * This is the main function, which serves as the entry point of the program.
+ * It calls the _putchar function to print the string "_putchar" followed by
+ * a newline character. The function returns 0 to indicate successful
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
