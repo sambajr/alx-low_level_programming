@@ -7,7 +7,7 @@
 *
 * Description: This function prints a character to the standard output (screen).
 */
-void print_char(char c)
+void _putchar(char c)
 {
 	write(1, &c, 1);
 }
