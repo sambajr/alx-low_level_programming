@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 /**
  *  * print_rev - Prints a string in reverse order to stdout.
  *   * @s: A pointer to a null-terminated string.
@@ -23,6 +22,7 @@ void print_rev(char *s)
 	}
 	for (i = length - 1; i >= 0 ; i--)
 	{
-		write(1, &s[i], 1);
+		_putchar(s[i]);
 	}
+	_putchar('\n');
 }
