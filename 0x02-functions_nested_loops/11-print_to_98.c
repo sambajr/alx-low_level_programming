@@ -7,6 +7,7 @@
 void print_to_98(int n)
 {
 	int i;
+	int num = 98
 
 	if (n <= 98)
 	{
@@ -14,8 +15,8 @@ void print_to_98(int n)
 		{
 			if (i < 98)
 			{
-				_putchar(i / 10 + '0');
-				_putchar(i % 10 + '0');
+				_putchar('num' + '0');
+				_putchar('n' + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
@@ -23,7 +24,7 @@ void print_to_98(int n)
 			{
 				_putchar(i / 10 + '0');
 				_putchar(i % 10 + '0');
-				_putchar('\n');
+				_putchar('\n');:wq
 			}
 		}
 	}
