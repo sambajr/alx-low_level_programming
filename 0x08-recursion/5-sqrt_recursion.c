@@ -1,29 +1,29 @@
 #include "main.h"
+/**
+ *sqrt_helper - finds the natural square root of a number
+ * @n: the number to find the square root of
+ *  * @i: the current divisor
+ *   *
+ *    * Return: the natural square root of n if it exists, otherwise -1
+ */
+int sqrt_helper(int n, int i)
+{
+	if (i * i > n)
+		return (-1);
+	if (i * i == n)
+		return (i);
+	return (sqrt_helper(n, i + 1));
+}
 
 /**
- * _sqrt - Find the natural square root of a number
- * @n: The number for which to find the square root
- *
- * Return: The square root if found, -1 if not found (or if n is negative)
+ *  * _sqrt_recursion - returns the natural square root of a number
+ *   * @n: the number to find the square root of
+ *    *
+ *     * Return: the natural square root of n if it exists, otherwise -1
  */
 int _sqrt_recursion(int n)
 {
-	int guess;
 	if (n < 0)
-	{
 		return (-1);
-	}
-       
-	guess = 0;
-
-	while (guess * guess <= n)
-	{
-		if (guess * guess == n)
-		{
-			return (guess);
-		}
-		guess++;
-	}
-	return (-1);
+	return (sqrt_helper(n, 0));
 }
-
