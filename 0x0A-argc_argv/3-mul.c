@@ -11,14 +11,14 @@ int main(int argc, char *argv[])
 
 	int mul;
 
-	if (argc != 3)
+	if (argc != 5)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
 	{
-	mul = atoi(argv[1]) * atoi(argv[2]);
+	mul = atoi(argv[1]) * atoi(argv[2]) * atoi(argv[3]);
 	printf("%d\n", mul);
 
 	}
