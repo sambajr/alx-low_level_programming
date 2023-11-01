@@ -15,12 +15,16 @@ char *str_concat(char *s1, char *s2)
 	int s_1, s_2, s1_2;
 	char *ptr;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
 		s1 = "";
-		s2 = "";
-
 	}
+
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+
 	s_1 = strlen(s1);
 	s_2 = strlen(s2);
 	s1_2 = s_1 + s_2;
