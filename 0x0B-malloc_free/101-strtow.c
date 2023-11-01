@@ -9,19 +9,23 @@
  */
 char **strtow(char *str)
 {
+	int count;
+	char *token;
+	char *copy;
+	int i, j;
+	char **words;
+
 	if (!str || !*str)
 		return (NULL);
-	int count;
+	
 
 	count = 0;
-	char *token, *copy;
 
 	copy = strdup(str);
 	if (!copy)
 		return (NULL);
 	for (token = strtok(copy, " "); token; token = strtok(NULL, " "))
 		count++;
-	char **words;
 
 	words = malloc((count + 1) * sizeof(char *));
 	if (!words)
@@ -29,8 +33,6 @@ char **strtow(char *str)
 		free(copy);
 		return (NULL);
 	}
-	int i;
-	int j;
 
 	i = 0;
 	for (token = strtok(str, " "); token; token = strtok(NULL, " "))
